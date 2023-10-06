@@ -44,7 +44,7 @@
 
   export default {
     async setup(){
-      let {data: emails} = await axios.get('http://localhost:3000/emails')
+      let {data: emails} = await axios.get('https://email-clone-json-server.onrender.com/emails')
 
       return {
         emailSelection: useEmailSelection(),
@@ -105,7 +105,7 @@
         }
       },
       updateEmail(email) {
-        axios.put(`http://localhost:3000/emails/${email.id}`, email)
+        axios.put(`https://email-clone-json-server.onrender.com/emails/${email.id}`, email)
       }
     }
   }

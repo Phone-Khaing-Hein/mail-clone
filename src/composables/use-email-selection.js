@@ -22,7 +22,7 @@ export const useEmailSelection = function(){
   let forSelected = (fn) => {
     emails.forEach((email) => {
       fn(email);
-      axios.put(`http://localhost:3000/emails/${email.id}`, email)
+      axios.put(`https://email-clone-json-server.onrender.com/emails/${email.id}`, email)
     })
   }
   let markRead = () => forSelected(e => e.read = true)

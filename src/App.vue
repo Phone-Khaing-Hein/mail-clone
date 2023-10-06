@@ -1,5 +1,5 @@
 <template>
-  <h1>VMail Inbox</h1>
+  <h1>PKH Mail Inbox</h1>
 
   <Suspense>
     <template #default>
@@ -58,11 +58,11 @@ button.selected {
 }
 
 input[type='checkbox'] {
-  -webkit-appearance:none;
+  -webkit-appearance: none;
   cursor: pointer;
-  width:24px;
-  height:24px;
-  background:white;
+  width: 24px;
+  height: 24px;
+  background: white;
   border-radius: 2px;
   border: 1px solid #555;
   position: relative;
@@ -84,17 +84,20 @@ input[type='checkbox']:checked {
 
 /* Modal */
 
-.modal, .overlay {
+.modal,
+.overlay {
   width: 100%;
   height: 100%;
   position: fixed;
   left: 0;
   top: 0;
 }
+
 .overlay {
   opacity: 0.5;
   background-color: black;
 }
+
 .modal-card {
   position: relative;
   max-width: 80%;
@@ -120,20 +123,25 @@ input[type='checkbox']:checked {
   margin: auto;
   border-collapse: collapse;
 }
+
 .mail-table tr.read {
   background-color: #EEE;
 }
+
 .mail-table tr {
   height: 40px;
 }
+
 .mail-table td {
   border-bottom: 1px solid black;
   padding: 5px;
   text-align: left;
 }
+
 .mail-table tr:first-of-type td {
   border-top: 1px solid black;
 }
+
 .mail-table td p {
   max-height: 1.2em;
   overflow-y: hidden;
@@ -161,5 +169,4 @@ input[type='checkbox']:checked {
 .bulk-action-bar .checkbox {
   margin-right: 6px;
   margin-left: 3px;
-}
-</style>
+}</style>
